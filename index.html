@@ -1,43 +1,56 @@
 <!DOCTYPE HTML>
 <html>
 	<head>
-	<link rel="stylesheet" type="text/css" href="style.css"/>
+	<link rel="stylesheet" type="text/css" href="css/style.css"/>
 	<script src=http://code.jquery.com/jquery-latest.min.js></script>
-	<link rel="stylesheet" href="bjqs.css">
+	<link rel="stylesheet" href="css/bjqs.css">
 	<link href='http://fonts.googleapis.com/css?family=Source+Code+Pro|Open+Sans:300' rel='stylesheet' type='text/css'> 
-	<link rel="stylesheet" href="demo.css">
 	<script src="js/bjqs-1.3.min.js"></script>
 	</head>
 	<body>
-		<!--<div id="header">
-			<form id="searchstyle" method="get" action="http://www.google.com">
-		        <input type="text" id="erase" class="textinput" name="sb" size="21" maxlength="120" value="find services in your area"><input type="submit" value="Search" class="searchbutton">
-			</form>
-		</div>
-		<div id="banner">
-			<div id="bananchors">
-				<div class="placeholders">
-					<a class="navigation" href="http://www.facebook.com">
-						Home
-					</a>
-				</div>
-				<div class="placeholders">
-					<a class="navigation" href="http://www.facebook.com">
-					Contact Us
-					</a>
-				</div>
-			</div>
-		</div>-->
 		<div id="background">
+			<h1>Name of website</h1>
 			<div id="wrapper">
 			
-				<div id="top">
-				
-				</div>
 				<div class="side">
+					<ul id="topside">
+						<li class="btn">
+							<a type="button" href="index.html">home</a>
+						</li>
+						<li class="btn">
+							<a type="button">search</a>
+						</li>
+						<li class="btn">
+							<a type="button">contact us</a>
+						</li>
+					</ul>
+					<div id="smallside">
+						<div>
+							<h2 id="sideheader"> search for services in your area </h2>
+							<p id="sidepara">on our website you can search for medical services in your area fast and effectively</p>
+						</div>
+					</div>
+					<div id="largeside">
+						<div>
+							<form id="searchstyle" method="get" action="http://www.google.com">
+								<input type="text" id="erase" class="textinput" name="sb" size="16" maxlength="120" value="find services in your area"><input type="submit" value="Search" class="searchbutton">
+							</form>
+							<select class="slop" style="width:140px">
+								<option value="location">Location</option>
+								<option value="Dublin">Dublin</option>
+								<option value="Wicklow">Wicklow</option>
+							</select>
+							<select class="slop" style="width:140px">
+								<option value="Type">Services</option>
+								<option value="Chemist">Chemist</option>
+								<option value="GP">GP</option>
+							</select>
+						</div>
+						
+					</div>
 				</div>
-				<div class="main" id="homemain">
-					<div id="container">
+				
+				<div id="container">
 						<div id="banner-slide">
 
  
@@ -48,28 +61,35 @@
 							</ul>
      
 						</div>
-						<script class="">
-							jQuery(document).ready(function($) {
-          
-								$('#banner-slide').bjqs({
-									animtype      : 'slide',
-									height        : 320,
-									width         : 620,
-									responsive    : true,
-									randomstart   : true
-								});
-          
-							});
-      </script>
 						
-					</div>
-      
-
+							<script class="">
+								jQuery(document).ready(function($) {
+          
+									$('#banner-slide').bjqs({
+										animtype      : 'slide',
+										height        : 320,
+										width         : 500,
+										responsive    : true,
+										randomstart   : true
+									});
+          
+								});
+							</script>
+							<!--main is contained within the container div to create an appearance of overlapping-->
+						<div class="main" id="homemain">
+							<div id="centermain">
+							
+							</div>
+						</div>
 				</div>
-		
+				<!--for anchors and other links-->
+				<div id="bottom">
+					<div>
+					</div>
 				</div>
 			</div>
 		</div>
+		
 		
 	   <script src="js/libs/jquery.secret-source.min.js"></script>
 
@@ -82,7 +102,7 @@
 
     });
     </script>
-	<!--<script src="behaviour.js"></script>-->
+	<script src="js/behaviour.js"></script>
 	
 	</body>
 
