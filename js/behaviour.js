@@ -1,3 +1,4 @@
+
 window.onload = function(){ 
 	//Get submit button
 	var submitbutton = document.getElementById("erase");
@@ -10,11 +11,39 @@ window.onload = function(){
 			}
 		});
 	}
-	if(submitbutton2.addEventListener){
-		submitbutton2.addEventListener("click", function() {
-			if (submitbutton2.value == 'find services in your area'){
-				submitbutton2.value = '';
-			}
-		});
-	}
+
 }
+//need to put in separate js but need to get working first
+/*function getid(a_id){
+	return document.getElementById(a_id);
+}
+function close_all(){
+for(i = 0; i < 999; i++){
+	var o = getid("service" +i);
+	if(o){
+	o.style.display="none";
+	{
+}
+}
+
+function findDiv(){
+	var search = getid("erase");
+	var name = erase.value;
+	name = name.toUpperCase();
+	var strSearch = erase.split(/\w/);
+
+	for(var i = 0, charlenght = strSearch.length; i < charlenght; i++){
+		var currentsearch = strSearch[i].toUpperCase();
+		if(currentsearch !== ""){
+			alert("got this far2");
+			hiddenDivs = document.getElementsByClassName("searchresult");
+			for(var j = 0, divsize = hiddenDivs.length; j < divsize; j++){
+				if(hiddenDivs[j].textContent.toUpperCase().indexOf(currentsearch) !== -1){
+				hiddenDivs[j].style.display = "block";
+				
+			
+				}
+			}
+		}
+	}
+}*/

@@ -1,70 +1,86 @@
 <!DOCTYPE HTML>
 <html>
 	<head>
-	<link rel="stylesheet" type="text/css" href="style.css"/>
-	<link href='http://fonts.googleapis.com/css?family=Diplomata' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" href="css/style.css"/>
+	<script src=http://code.jquery.com/jquery-latest.min.js></script>
+	<link rel="stylesheet" href="css/bjqs.css">
+	<link href='http://fonts.googleapis.com/css?family=Source+Code+Pro|Open+Sans:300' rel='stylesheet' type='text/css'> 
+	<script src="js/bjqs-1.3.min.js"></script>
 	</head>
 	<body>
-		<div id="header">
-			<p class="font-style">
-			medical system
-			</p>
-			<form id="searchstyle" method="get" action="http://www.google.com">
-		        <input type="text" id="erase" class="textinput" name="sb" size="21" maxlength="120" value="find services in your area"><input type="submit" value="Search" class="searchbutton">
-			</form>
-		</div>
-		<div id="banner">
-			<div id="bananchors">
-				<div class="placeholders">
-					<a class="navigation" href="http://www.facebook.com">
-						Home
-					</a>
+		<div id="background">
+			<h1>Name of website</h1>
+			<div id="wrapper">
+			
+				<div class="side">
+					<ul id="topside">
+						<li class="btn">
+							<a type="button" href="index.html">home</a>
+						</li>
+						<li class="btn">
+							<a type="button">search</a>
+						</li>
+						<li class="btn">
+							<a type="button">contact us</a>
+						</li>
+					</ul>
+					<div id="largeside2">
+						<div>
+							<form id="searchstyle" method="get">
+								<input type="text" id="erase" class="textinput" name="sb" size="16" maxlength="120" value="find services in your area"><input type="submit" value="Search" class="searchbutton" onClick="findDiv();">
+							</form>
+							<select class="slop" style="width:140px">
+								<option value="location">Location</option>
+								<option value="Dublin">Dublin</option>
+								<option value="Wicklow">Wicklow</option>
+							</select>
+							<select class="slop" style="width:140px">
+								<option value="Type">Services</option>
+								<option value="Chemist">Chemist</option>
+								<option value="GP">GP</option>
+							</select>
+						</div>
+						
+					</div>
 				</div>
-				<div class="placeholders">
-					<a class="navigation" href="http://www.facebook.com">
-					Contact Us
-					</a>
+						<div class="main" id="searchmain">
+							<div id="centersearch">
+								<div id="service1" class="searchresult">
+									<a class="pagelink"> drugs R us</a>
+									<p class="details"> get all your high end drugs here.</p>
+									<p class="details">Need meth no problem we've got your back....</p>
+									<p class="details">unless the cops call then we don't know you</p>
+								</div>
+								<div id="service2" class="searchresult" style="display:none">
+									<a class="pagelink"> dr.dennis the mennis local GP</a>
+									<p class="details"> we dont care what your problem is</p>
+									<p class="details">we will find a drug that will</p>
+									<p class="details"> make you forget all about it</p>
+								</div>
+							</div>
+						</div>
+				<!--for anchors and other links-->
+				<div id="bottom">
+					<div>
+					</div>
 				</div>
 			</div>
-		</div>
-		<div id="wrapper">
-			
-			<div id="top">
-			
-			</div>
-			<div class="side">
-				
-				<form id="searchstyle2" method="get" action="http://www.google.com">
-					<input type="text" id="erase2" class="textinput" name="seb" size="12" maxlength="120" value="find services in your area"><input type="submit" value="Search" class="searchbutton">
-				</form>
-			
-				<select class="slop" style="width:155px">
-					<option value="location">Location</option>
-					<option value="Dublin">Dublin</option>
-					<option value="Wicklow">Wicklow</option>
-				</select>
-				<select class="slop" style="width:155px">
-					<option value="Type">Services</option>
-					<option value="Chemist">Chemist</option>
-					<option value="GP">GP</option>
-				</select>
-			</div>
-			
-			<div class="main" id="searchmain">
-			<div id="ad">
-			</div>
-			<div id="ad2">
-			</div>
-			<div id="ad3">
-			</div>
-			</div>
-			
-			<div class="advert" id="adsecondpg">
-			</div>
-			
 		</div>
 		
-	<script src="behaviour.js"></script>	
+		
+	   <script src="js/libs/jquery.secret-source.min.js"></script>
+
+    <script>
+    jQuery(function($) {
+
+        $('.secret-source').secretSource({
+            includeTag: false
+        });
+
+    });
+    </script>
+	<script src="js/behaviour.js"></script>
+	
 	</body>
 
 </html>

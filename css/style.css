@@ -135,7 +135,23 @@ margin:0 auto;
 												margin-top:20px;
 												margin-left:20px;
 											}
-	
+												#largeside2
+												{
+													background-color: #f7f7f7;
+													box-shadow: 5px 5px 5px #888888;
+													border: 1px solid #cec596;
+													border-radius: 5px;
+													margin: 0 0 15px;
+													padding: 5px;
+													width: 220px;
+													height:713px;
+												}
+													#largeside2 div
+													{
+														width:auto;
+														height:700px;
+														padding: 5px 14px;
+													}
 .main
 {
 	border: 1px solid #cec596;
@@ -158,8 +174,69 @@ margin:0 auto;
 			padding:5px;
 			background-color:white;
 		}
+			#searchmain
+			{	
+				background-color: #f7f7f7;
+				float:left;
+				width:500px;
+				height:713px;
+				margin-top:253px;
+				padding:5px;
+			}	
+				#centersearch
+				{
+					width:490px;
+					height:700px;
+					padding:5px;
+					background-color:white;
+				}
+.searchresult
+{
+	width:480px;
+	height:125px;
+	padding:5px;
+	background-color:rgba(75, 73, 73, 0.1);
+}
+	#service1
+	{
+		margin: 0 0 10px;
+		background-image:url("../images/chem.jpg");
+		background-size: 35% 91%;
+		background-repeat:no-repeat;
+		background-position:5px 5px;
+		display:none;
+	}
+		#service2
+		{
+			margin: 0 0 10px;
+			background-image:url("../images/chem.jpg");
+			background-size: 35% 91%;
+			background-repeat:no-repeat;
+			background-position:5px 5px;
+			
+		}
+			.pagelink
+			{
+				position:relative;
+				top:5px;
+				left:190px;
+				color: #334559;
+				font-weight:bold;
+				font-size: 15px;
+				
+			}
+				.details
+				{
+					position:relative;
+					top:2px;
+					left:190px;
+					color: #334559;
+					font-weight:bold;
+					font-size: 13px;
+					line-height: 10px;
+				}
 		
-
+		
 #searchstylemain
 {
 	float:left;

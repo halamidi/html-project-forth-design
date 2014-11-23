@@ -5,6 +5,7 @@
 	<script src=http://code.jquery.com/jquery-latest.min.js></script>
 	<link rel="stylesheet" href="css/bjqs.css">
 	<link href='http://fonts.googleapis.com/css?family=Source+Code+Pro|Open+Sans:300' rel='stylesheet' type='text/css'> 
+	<!--bjqs-1.3 is not our code so i have left it out of our main JavaScript the name of the creator of the js is contained within the js-->
 	<script src="js/bjqs-1.3.min.js"></script>
 	</head>
 	<body>
@@ -33,7 +34,7 @@
 					<div id="largeside">
 						<div>
 							<form id="searchstyle" method="get" action="http://www.google.com">
-								<input type="text" id="erase" class="textinput" name="sb" size="16" maxlength="120" value="find services in your area"><input type="submit" value="Search" class="searchbutton">
+								<input type="text" id="erase" class="textinput" name="sb" size="16" maxlength="120" value="find services in your area"><input type="submit" value="Search" class="searchbutton" id="click" onclick="findDiv();">
 							</form>
 							<select class="slop" style="width:140px">
 								<option value="location">Location</option>
@@ -90,7 +91,7 @@
 			</div>
 		</div>
 		
-		
+		<!--jquery.secret-source.min.js is not our code so it has been left out of our main js file the creators name is in bjqs-1.3-->
 	   <script src="js/libs/jquery.secret-source.min.js"></script>
 
     <script>
