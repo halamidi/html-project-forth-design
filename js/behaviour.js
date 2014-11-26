@@ -1,4 +1,4 @@
-
+//note for sam onload function works this is only to remove text from search box
 window.onload = function(){ 
 	//Get submit button
 	var submitbutton = document.getElementById("erase");
@@ -13,6 +13,7 @@ window.onload = function(){
 	}
 
 }
+//note to sam the three functions below is the code i am currently trying to get working i got this from the internet
 //need to put in separate js but need to get working first
 /*
 function getid(a_id){
@@ -49,6 +50,7 @@ function findDiv(){
 		}
 	}
 }*/
+//note to sam the below function is my own witten code that i cannot seem to get working
 function findDiv(){
 	alert("test1");
 	var search = document.getElementById("erase");
