@@ -14,7 +14,8 @@ window.onload = function(){
 
 }
 //need to put in separate js but need to get working first
-/*function getid(a_id){
+/*
+function getid(a_id){
 	return document.getElementById(a_id);
 }
 function close_all(){
@@ -27,13 +28,14 @@ for(i = 0; i < 999; i++){
 }
 
 function findDiv(){
+	close_all();
 	var search = getid("erase");
 	var name = erase.value;
 	name = name.toUpperCase();
 	var strSearch = erase.split(/\w/);
 
 	for(var i = 0, charlenght = strSearch.length; i < charlenght; i++){
-		var currentsearch = strSearch[i].toUpperCase();
+		var currentsearch = erase[i].toUpperCase();
 		if(currentsearch !== ""){
 			alert("got this far2");
 			hiddenDivs = document.getElementsByClassName("searchresult");
@@ -47,3 +49,14 @@ function findDiv(){
 		}
 	}
 }*/
+function findDiv(){
+	alert("test1");
+	var search = document.getElementById("erase");
+	var name = search.value;
+	name = name.toUpperCase();
+	var hiddenDivs = document.getElementsById("service1");
+ if(name == "GP"){
+	alert("test");
+	hiddenDivs.style.display = "block";
+ }
+}
