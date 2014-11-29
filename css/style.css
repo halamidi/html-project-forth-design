@@ -327,6 +327,7 @@ margin:0 auto;
 }
 
 #banner-slide{
+	
 	margin-bottom: 60px;
 }
 
@@ -349,6 +350,7 @@ ol.bjqs-markers li a{
 	color:#fff;
 	margin:5px;
 	text-decoration: none;
+	
 }
 
 ol.bjqs-markers li.active-marker a,

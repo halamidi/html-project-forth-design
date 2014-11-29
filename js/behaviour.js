@@ -13,52 +13,30 @@ window.onload = function(){
 	}
 
 }
-//note to sam the three functions below is the code i am currently trying to get working i got this from the internet
-//need to put in separate js but need to get working first
-/*
-function getid(a_id){
-	return document.getElementById(a_id);
-}
-function close_all(){
-for(i = 0; i < 999; i++){
-	var o = getid("service" +i);
-	if(o){
-	o.style.display="none";
-	{
-}
-}
 
-function findDiv(){
-	close_all();
-	var search = getid("erase");
-	var name = erase.value;
-	name = name.toUpperCase();
-	var strSearch = erase.split(/\w/);
-
-	for(var i = 0, charlenght = strSearch.length; i < charlenght; i++){
-		var currentsearch = erase[i].toUpperCase();
-		if(currentsearch !== ""){
-			alert("got this far2");
-			hiddenDivs = document.getElementsByClassName("searchresult");
-			for(var j = 0, divsize = hiddenDivs.length; j < divsize; j++){
-				if(hiddenDivs[j].textContent.toUpperCase().indexOf(currentsearch) !== -1){
-				hiddenDivs[j].style.display = "block";
-				
-			
-				}
+$(document).ready(function(){
+    $('.searchbutton').click(function(){
+        var toAdd = $('#erase').val();
+		toAdd = toAdd.toUpperCase();
+		var hiddenDivs = $("service1");
+        if(toAdd == "PHARMACY" || toAdd == "HICKEYS"){
+			$("#service1").css("display", "block");
 			}
-		}
-	}
-}*/
-//note to sam the below function is my own witten code that i cannot seem to get working
-function findDiv(){
-	alert("test1");
-	var search = document.getElementById("erase");
-	var name = search.value;
-	name = name.toUpperCase();
-	var hiddenDivs = document.getElementsById("service1");
- if(name == "GP"){
-	alert("test");
-	hiddenDivs.style.display = "block";
- }
-}
+			else{
+			$("#service1").css("display", "none");
+			}
+        });
+    });
+	$(document).ready(function(){
+    $('.searchbutton').click(function(){
+        var toAdd = $('#erase').val();
+		toAdd = toAdd.toUpperCase();
+		var hiddenDivs = $("service2");
+        if(toAdd == "GP" || toAdd == "DENNIS"){
+			$("#service2").css("display", "block");
+			}
+			else{
+			$("#service2").css("display", "none");
+			}
+        });
+    });

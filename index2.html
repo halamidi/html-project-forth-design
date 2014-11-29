@@ -26,8 +26,8 @@
 					</ul>
 					<div id="largeside2">
 						<div>
-							<form id="searchstyle" method="get">
-								<input type="text" id="erase" class="textinput" name="sb" size="16" maxlength="120" value="find services in your area"><input type="submit" value="Search" class="searchbutton" onClick="findDiv();">
+							<form id="searchstyle" onsubmit="findDiv();" method="get">
+								<input type="text" id="erase" class="textinput" name="sb" size="16" maxlength="120" value="find services in your area"><input type="button" value="Search" class="searchbutton">
 							</form>
 							<select class="slop" style="width:140px">
 								<option value="location">Location</option>
@@ -46,16 +46,13 @@
 						<div class="main" id="searchmain">
 							<div id="centersearch">
 								<div id="service1" class="searchresult" value="chem">
-									<a class="pagelink"> drugs R us</a>
-									<p class="details"> get all your high end drugs here.</p>
-									<p class="details">Need meth no problem we've got your back....</p>
-									<p class="details">unless the cops call then we don't know you</p>
+									<a class="pagelink"> hickeys pharmacy </a>
+									<p class="details"> get all your medical supplies here.</p>
+								
 								</div>
 								<div id="service2" class="searchresult" style="display:none">
 									<a class="pagelink"> dr.dennis the mennis local GP</a>
-									<p class="details"> we dont care what your problem is</p>
-									<p class="details">we will find a drug that will</p>
-									<p class="details"> make you forget all about it</p>
+									<p class="details"> we are here to help</p>
 								</div>
 							</div>
 						</div>
@@ -78,6 +75,7 @@
         });
 
     });
+
     </script>
 	<script src="js/behaviour.js"></script>
 	
