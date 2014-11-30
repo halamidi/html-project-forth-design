@@ -1,11 +1,12 @@
 <!DOCTYPE HTML>
 <html>
 	<head>
-	<link rel="stylesheet" type="text/css" href="css/style.css"/>
-	<script src=http://code.jquery.com/jquery-latest.min.js></script>
-	<link rel="stylesheet" href="css/bjqs.css">
-	<link href='http://fonts.googleapis.com/css?family=Source+Code+Pro|Open+Sans:300' rel='stylesheet' type='text/css'> 
-	<script src="js/bjqs-1.3.min.js"></script>
+		<title> website name</title>
+		<link rel="stylesheet" type="text/css" href="css/style.css"/>
+		<script src=http://code.jquery.com/jquery-latest.min.js></script>
+		<link rel="stylesheet" href="css/bjqs.css">
+		<link href='http://fonts.googleapis.com/css?family=Source+Code+Pro|Open+Sans:300' rel='stylesheet' type='text/css'> 
+		<script src="js/bjqs-1.3.min.js"></script>
 	</head>
 	<body>
 		<div id="background">
@@ -26,17 +27,17 @@
 					</ul>
 					<div id="largeside2">
 						<div>
-							<form id="searchstyle" onsubmit="findDiv();" method="get">
+							<form id="searchstyle" method="get">
 								<input type="text" id="erase" class="textinput" name="sb" size="16" maxlength="120" value="find services in your area"><input type="button" value="Search" class="searchbutton">
 							</form>
-							<select class="slop" style="width:140px">
+							<select class="slop" id="location" style="width:140px">
 								<option value="location">Location</option>
 								<option value="Dublin">Dublin</option>
 								<option value="Wicklow">Wicklow</option>
 							</select>
-							<select class="slop" style="width:140px">
+							<select class="slop" id="category" style="width:140px">
 								<option value="Type">Services</option>
-								<option value="Chemist">Chemist</option>
+								<option value="Pharmacy">Pharmacy</option>
 								<option value="GP">GP</option>
 							</select>
 						</div>
@@ -45,14 +46,30 @@
 				</div>
 						<div class="main" id="searchmain">
 							<div id="centersearch">
-								<div id="service1" class="searchresult" value="chem">
+								<div id="service1" class="searchresult" style="display:none">
 									<a class="pagelink"> hickeys pharmacy </a>
 									<p class="details"> get all your medical supplies here.</p>
-								
 								</div>
 								<div id="service2" class="searchresult" style="display:none">
 									<a class="pagelink"> dr.dennis the mennis local GP</a>
 									<p class="details"> we are here to help</p>
+								</div>
+								<div id="service3" class="searchresult" style="display:none">
+									<a class="pagelink"> dr.Mitchells</a>
+									<p class="details"> your local GP we are here to help</p>
+									<p class="details"> just call us at 0123555555</p>
+									<p class="details"> to make an appointment</p>
+								</div>
+								<div id="service4" class="searchresult" style="display:none">
+									<a class="pagelink"> Roches Pharmacy</a>
+									<p class="details"> your local Pharmacy we are here to help</p>
+									<p class="details"> just call us at 01238975555</p>
+									<p class="details"> or come visit us in Arklow Co.wicklow</p>
+								</div>
+								<div id="service5" class="searchresult" style="display:none">
+									<a class="pagelink"> Boots Pharmacy</a>
+									<p class="details"> find us near you</p>
+									<p class="details"> just call us at 014355555</p>
 								</div>
 							</div>
 						</div>
@@ -75,7 +92,14 @@
         });
 
     });
-
+	$(document).ready(function(){
+		$('#erase').keyup(function(e) {
+			if(e.which == 13) {
+			$.fn.display();
+			return false;
+			}
+		});
+	});
     </script>
 	<script src="js/behaviour.js"></script>
 	
