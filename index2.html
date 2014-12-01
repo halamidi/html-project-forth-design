@@ -1,5 +1,10 @@
 <!DOCTYPE HTML>
 <html>
+<!--to do
+set limit on how many divs in main can be displayed at once similar to old custom slider
+fill in side divider
+merge barrys code with mine
+-->
 	<head>
 		<title> website name</title>
 		<link rel="stylesheet" type="text/css" href="css/style.css"/>
@@ -13,7 +18,7 @@
 			<h1>Name of website</h1>
 			<div id="wrapper">
 			
-				<div class="side">
+				<div class="side" id="sidepg2" >
 					<ul id="topside">
 						<li class="btn">
 							<a type="button" href="index.html">home</a>
@@ -26,9 +31,9 @@
 						</li>
 					</ul>
 					<div id="largeside2">
-						<div>
+						<div id="sidediv">
 							<form id="searchstyle" method="get">
-								<input type="text" id="erase" class="textinput" name="sb" size="16" maxlength="120" value="find services in your area"><input type="button" value="Search" class="searchbutton">
+								<input type="text" id="erase" class="textinput" name="sb" size="16" maxlength="120" value="find services in your area"><input type="button" onclick="test();"value="Search" class="searchbutton">
 							</form>
 							<select class="slop" id="location" style="width:140px">
 								<option value="location">Location</option>
@@ -71,6 +76,11 @@
 									<p class="details"> find us near you</p>
 									<p class="details"> just call us at 014355555</p>
 								</div>
+								<div id="service6" class="searchresult" style="display:none">
+									<a class="pagelink"> noname GP</a>
+									<p class="details"> based in wicklow</p>
+									<p class="details"> just call us at 014355555</p>
+								</div>
 							</div>
 						</div>
 				<!--for anchors and other links-->
@@ -100,6 +110,7 @@
 			}
 		});
 	});
+	
     </script>
 	<script src="js/behaviour.js"></script>
 	

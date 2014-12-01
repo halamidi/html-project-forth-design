@@ -37,121 +37,128 @@ margin:0 auto;
 .side
 {
 	width:240px;
-	height:980px;
 	float:left;
 	margin-top:10px;
 }
-	#topside
+	#sidepg1
 	{
-		width: 220px;
-		height:200px;
-		padding: 5px;
+		height:980px;
 	}
-		#smallside
+		#sidepg2
 		{
-			background-color: #f7f7f7;
-			box-shadow: 5px 5px 5px #888888;
-			border: 1px solid #cec596;
-			border-radius: 5px;
-			margin: 5px 0 16px;
-			padding: 5px;
-			width: 220px;
-			height:325px;
+			height:992px; 
 		}
-			#smallside div{
-				width:auto;
-				height:313px;
-				background-image:url("../images/chem.jpg");
-				background-size: 90% 40%;
-				background-repeat:no-repeat;
-				background-position:10px 40px;
-				padding: 5px 14px;
+			#topside
+			{
+				width: 220px;
+				height:200px;
+				padding: 5px;
 			}
-				#sideheader
+				#smallside
 				{
-					color: #334559;
-					font-weight:bold;
-					font-size: 13px;
-					line-height: 24px;
-					margin: 5px 0 0;
+					background-color: #f7f7f7;
+					box-shadow: 5px 5px 5px #888888;
+					border: 1px solid #cec596;
+					border-radius: 5px;
+					margin: 5px 0 16px;
+					padding: 5px;
+					width: 220px;
+					height:325px;
 				}
-					#sidepara
-					{
-						color: #334559;
-						font-size: 13px;
-						line-height: 24px;
-						margin: 140px 0 0;
+					#smallside div{
+						width:auto;
+						height:313px;
+						background-image:url("../images/chem.jpg");
+						background-size: 90% 40%;
+						background-repeat:no-repeat;
+						background-position:10px 40px;
+						padding: 5px 14px;
 					}
-						.side div
+						#sideheader
 						{
-							background-color: #fff;
-							border: 0;
-							border-radius: 0;
-							margin: 0;
-							padding: 5px 14px 39px;
-							width: auto;
+							color: #334559;
+							font-weight:bold;
+							font-size: 13px;
+							line-height: 24px;
+							margin: 5px 0 0;
 						}
-							#largeside
+							#sidepara
 							{
-								background-color: #f7f7f7;
-								box-shadow: 5px 5px 5px #888888;
-								border: 1px solid #cec596;
-								border-radius: 5px;
-								margin: 0 0 15px;
-								padding: 5px;
-								width: 220px;
-								height:360px;
+								color: #334559;
+								font-size: 13px;
+								line-height: 24px;
+								margin: 140px 0 0;
 							}
-								#largeside div
+								.side div
 								{
-									width:auto;
-									height:348px;
-									padding: 5px 14px;
+									background-color: #fff;
+									border: 0;
+									border-radius: 0;
+									margin: 0;
+									padding: 5px 14px 39px;
+									width: auto;
 								}
-									.btn
+									#largeside
 									{
-										list-style:none;
-										margin:20px 20px 16px 0;
+										background-color: #f7f7f7;
+										box-shadow: 5px 5px 5px #888888;
+										border: 1px solid #cec596;
+										border-radius: 5px;
+										margin: 0 0 15px;
+										padding: 5px;
+										width: 220px;
+										height:360px;
 									}
-										.btn a
+										#largeside div
 										{
-											background-image:url("../images/button.png");
-											background-repeat:repeat-x;
-											width:180px;
-											height:36px;
-											border-color: #3DB746;
-											border-radius: 5px;
-											border-style: none solid;
-											border-width: 1px;
-											color: #fff;
-											display: block;
-											font-size: 14px;
-											text-align: center;
-											text-decoration: none;
-											line-height: 35px;
+											width:auto;
+											height:348px;
+											padding: 5px 14px;
 										}
-											.slop
+											.btn
 											{
-												margin-top:20px;
-												margin-left:20px;
+												list-style:none;
+												margin:20px 20px 16px 0;
 											}
-												#largeside2
+												.btn a
 												{
-													background-color: #f7f7f7;
-													box-shadow: 5px 5px 5px #888888;
-													border: 1px solid #cec596;
+													background-image:url("../images/button.png");
+													background-repeat:repeat-x;
+													width:180px;
+													height:36px;
+													border-color: #3DB746;
 													border-radius: 5px;
-													margin: 0 0 15px;
-													padding: 5px;
-													width: 220px;
-													height:713px;
+													border-style: none solid;
+													border-width: 1px;
+													color: #fff;
+													display: block;
+													font-size: 14px;
+													text-align: center;
+													text-decoration: none;
+													line-height: 35px;
 												}
-													#largeside2 div
+													.slop
 													{
-														width:auto;
-														height:700px;
-														padding: 5px 14px;
+														margin-top:20px;
+														margin-left:20px;
 													}
+														#largeside2
+														{
+															background-color: #f7f7f7;
+															box-shadow: 5px 5px 5px #888888;
+															border: 1px solid #cec596;
+															border-radius: 5px;
+															margin: 0 0 15px;
+															padding: 5px;
+															width: 220px;
+															height:725px;
+														}
+															#largeside2 div
+															{
+																width:auto;
+																height:713px;
+																padding: 5px 14px;
+															}
 .main
 {
 	border: 1px solid #cec596;
@@ -179,14 +186,14 @@ margin:0 auto;
 				background-color: #f7f7f7;
 				float:left;
 				width:500px;
-				height:713px;
+				height:725px;
 				margin-top:253px;
 				padding:5px;
 			}	
 				#centersearch
 				{
 					width:490px;
-					height:700px;
+					height:713px;
 					padding:5px;
 					background-color:white;
 				}
@@ -258,6 +265,14 @@ margin:0 auto;
 								background-repeat:no-repeat;
 								background-position:5px 5px;
 							}
+								#service6
+								{
+									margin: 0 0 10px;
+									background-image:url("../images/chem.jpg");
+									background-size: 35% 91%;
+									background-repeat:no-repeat;
+									background-position:5px 5px;
+								}
 		
 #searchstylemain
 {

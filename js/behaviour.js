@@ -75,6 +75,7 @@ $(document).ready(function(){
 		$("#service3").css("display", "none");
 		$("#service4").css("display", "none");
 		$("#service5").css("display", "none");
+		$("#service6").css("display", "none");
 		//removes paragraph
 		$( "p" ).remove( ":contains('no results found')" );
 		//declare and initialize variable 
@@ -165,16 +166,13 @@ $(document).ready(function(){
 				{
 				//keywords
 				 switch(toAdd){
-					case 'GP':
-						$("#service2").css("display", "block");
-						$("#service3").css("display", "block");
-					break;
 					case 'DENNIS':
 						$("#service2").css("display", "block");
 					break;
 					case 'MITCHELLS':
 						$("#service3").css("display", "block");
 					break;
+					case 'GP':
 					case 'DOCTORS':
 						$("#service2").css("display", "block");
 						$("#service3").css("display", "block");
@@ -187,38 +185,37 @@ $(document).ready(function(){
 				else if(loc == "Wicklow")
 				{
 				 switch(toAdd){
-					case 'GP':
-						$("#service3").css("display", "block");
-					break;
 					case 'DENNIS':
 						$("#service3").css("display", "block");
 					break;
+					case 'GP':
 					case 'DOCTORS':
 						$("#service3").css("display", "block");
+						$("#service6").css("display", "block");
 					break;
 					default:
 						$("#service3").css("display", "block");
+						$("#service6").css("display", "block");
 					}	
 				}
 				else{
 				switch(toAdd){
-					case 'GP':
-						$("#service2").css("display", "block");
-						$("#service3").css("display", "block");
-					break;
 					case 'DENNIS':
 						$("#service2").css("display", "block");
 					break;
 					case 'MITCHELLS':
 						$("#service3").css("display", "block");
 					break;
+					case 'GP':
 					case 'DOCTORS':
 						$("#service2").css("display", "block");
 						$("#service3").css("display", "block");
+						$("#service6").css("display", "block");
 					break;
 					default:
 						$("#service2").css("display", "block");
 						$("#service3").css("display", "block");
+						$("#service6").css("display", "block");
 					}	
 				}
 	}
@@ -233,11 +230,8 @@ $(document).ready(function(){
 					case 'MITCHELLS':
 						$("#service3").css("display", "block");
 					break;
-					case 'DOCTORS':
-						$("#service2").css("display", "block");
-						$("#service3").css("display", "block");
-					break;
 					case 'GP':
+					case 'DOCTORS':
 						$("#service2").css("display", "block");
 						$("#service3").css("display", "block");
 					break;
@@ -264,10 +258,9 @@ $(document).ready(function(){
 				 switch(toAdd){
 				 //keywords
 					case 'GP':
-						$("#service3").css("display", "block");
-					break;
 					case 'DOCTORS':
 						$("#service3").css("display", "block");
+						$("#service6").css("display", "block");
 					break;
 					case 'PHARMACY':
 						$("#service1").css("display", "block");
@@ -288,6 +281,7 @@ $(document).ready(function(){
 						$("#service4").css("display", "block");
 						$("#service5").css("display", "block");
 						$("#service3").css("display", "block");
+						$("#service6").css("display", "block");
 					}	
 				}
 				else{
@@ -299,12 +293,10 @@ $(document).ready(function(){
 						$("#service3").css("display", "block");
 					break;
 					case 'DOCTORS':
-						$("#service2").css("display", "block");
-						$("#service3").css("display", "block");
-					break;
 					case 'GP':
 						$("#service2").css("display", "block");
 						$("#service3").css("display", "block");
+						$("#service6").css("display", "block");
 					break;
 					case 'PHARMACY':
 						$("#service1").css("display", "block");
@@ -320,10 +312,36 @@ $(document).ready(function(){
 					case 'ROCHES':
 						$("#service4").css("display", "block");
 					break;
+					case 'ALL':
+					//just used as test
+						$("#service1").css("display", "block");
+						$("#service4").css("display", "block");
+						$("#service5").css("display", "block");
+						$("#service3").css("display", "block");
+						$("#service6").css("display", "block");
+						$("#service2").css("display", "block");
+					break;
 					default:
 						$('<p>no results found</p>').appendTo('#centersearch');
 					}	
 				}
 		}
+		//changes height of divs depending on how many child divs are visible
+		//for now there are only 6 child divs available so there is no need to check for more than one 
+		var visiblediv = $('#centersearch > :visible').length
+			if(visiblediv > 5){
+				$("#searchmain").css("height", "875px");
+				$("#centersearch").css("height", "863px");
+				$("#largeside2").css("height", "875px");
+				$("#sidediv").css("height", "863px");
+				$("#sidepg2").css("height", "1140px");
+			}
+			else{
+				$("#searchmain").css("height", "725px");
+				$("#centersearch").css("height", "713px");
+				$("#largeside2").css("height", "725px");
+				$("#sidediv").css("height", "713px");
+				$("#sidepg2").css("height", "992px");
+			}
         });
     });
