@@ -68,7 +68,7 @@ $(document).ready(function(){
     });
 */
 $(document).ready(function(){
-    $('.searchbutton').click(function(){
+    $('.searchbutton').click(function test(){
 		//reset display style
 		$("#service2").css("display", "none");
 		$("#service1").css("display", "none");
@@ -334,7 +334,7 @@ $(document).ready(function(){
 				$("#centersearch").css("height", "863px");
 				$("#largeside2").css("height", "875px");
 				$("#sidediv").css("height", "863px");
-				$("#sidepg2").css("height", "1140px");
+				$("#sidepg2").css("height", "1110px");
 			}
 			else if(visiblediv > 6){
 			$("#centersearch").css("overflow-y", "scroll");

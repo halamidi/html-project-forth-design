@@ -7,7 +7,7 @@ merge barrys code with mine
 add alt tags to all images on all pages
 -->
 	<head>
-		<title> website name</title>
+		<title> MEDICAL-HUB</title>
 		<link rel="stylesheet" type="text/css" href="css/style.css"/>
 		<script src=http://code.jquery.com/jquery-latest.min.js></script>
 		<link rel="stylesheet" href="css/bjqs.css">
@@ -16,25 +16,37 @@ add alt tags to all images on all pages
 	</head>
 	<body>
 		<div id="background">
-			<h1>Name of website</h1>
+			<div id="header">	
+				<img src="images/mainlogo.jpg" >
+				<h1>MEDICAL-HUB</h1>
+			</div>
 			<div id="wrapper">
 			
 				<div class="side" id="sidepg2" >
 					<ul id="topside">
 						<li class="btn">
-							<a type="button" href="index.html">home</a>
+							<a class="btnstyle" href="index.html" onmouseover="mopen('m1')" onmouseout="mclosetime()">Home</a>
+								<div id="m1" onmouseover="mcancelclosetime()" onmouseout="mclosetime()">
+									<a href="#">This will bring you to the homepage</a>
+								</div>
 						</li>
 						<li class="btn">
-							<a type="button">search</a>
+							<a class="btnstyle" href="https://www.google.ie" onmouseover="mopen('m2')" onmouseout="mclosetime()">Contact us</a>
+								<div id="m2" onmouseover="mcancelclosetime()" onmouseout="mclosetime()">
+									<a href="#">Click for our details</a>
+								</div>
 						</li>
 						<li class="btn">
-							<a type="button">contact us</a>
+							<a class="btnstyle" href="https://www.google.ie" onmouseover="mopen('m3')" onmouseout="mclosetime()">Search </a>
+								<div id="m3" onmouseover="mcancelclosetime()" onmouseout="mclosetime()">
+									<a href="#"> Search medical services</a>
+								</div>
 						</li>
 					</ul>
 					<div id="largeside2">
 						<div id="sidediv">
 							<form id="searchstyle" method="get">
-								<input type="text" id="erase" class="textinput" name="sb" size="16" maxlength="120" value="find services in your area"><input type="button" onclick="test();"value="Search" class="searchbutton">
+								<input type="text" id="erase" class="textinput" name="sb" size="16" maxlength="120" value="find services in your area"><input type="button" onsubmit="test();" value="Search" class="searchbutton">
 							</form>
 							<select class="slop" id="location" style="width:140px">
 								<option value="location">Location</option>

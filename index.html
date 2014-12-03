@@ -11,25 +11,28 @@
 	</head>
 	<body>
 		<div id="background">
-			<h1>MEDICAL-HUB</h1>
+			<div id="header">	
+				<img src="images/mainlogo.jpg" >
+				<h1>MEDICAL-HUB</h1>
+			</div>
 			<div id="wrapper">
 			
 				<div class="side" id="sidepg1">
 					<ul id="topside">
 						<li class="btn">
-							<a href="index.html" onmouseover="mopen('m1')" onmouseout="mclosetime()">Home</a>
+							<a class="btnstyle" href="index.html" onmouseover="mopen('m1')" onmouseout="mclosetime()">Home</a>
 								<div id="m1" onmouseover="mcancelclosetime()" onmouseout="mclosetime()">
 									<a href="#">This will bring you to the homepage</a>
 								</div>
 						</li>
 						<li class="btn">
-							<a href="https://www.google.ie" onmouseover="mopen('m2')" onmouseout="mclosetime()">Contact us</a>
+							<a class="btnstyle" href="https://www.google.ie" onmouseover="mopen('m2')" onmouseout="mclosetime()">Contact us</a>
 								<div id="m2" onmouseover="mcancelclosetime()" onmouseout="mclosetime()">
 									<a href="#">Click for our details</a>
 								</div>
 						</li>
 						<li class="btn">
-							<a href="https://www.google.ie" onmouseover="mopen('m3')" onmouseout="mclosetime()">Search </a>
+							<a class="btnstyle" href="https://www.google.ie" onmouseover="mopen('m3')" onmouseout="mclosetime()">Search </a>
 								<div id="m3" onmouseover="mcancelclosetime()" onmouseout="mclosetime()">
 									<a href="#"> Search medical services</a>
 								</div>
@@ -42,9 +45,9 @@
 						</div>
 					</div>
 					<div id="largeside">
-						<div>
+						<div id="insidediv">
 							<form id="searchstyle" method="get" action="index2.html">
-								<input type="text" id="erase" class="textinput" name="sb" size="16" maxlength="120" value="find services in your area"><input type="button" value="Search" onsubmit="index2.html" class="searchbutton" id="click">
+								<input type="text" id="erase" class="textinput" name="sb" size="16" maxlength="120" value="find services in your area"><input type="button" value="Search" onclick="index2.html" class="searchbutton" id="click">
 							</form>
 							<select class="slop" style="width:140px">
 								<option value="location">Location</option>
@@ -56,6 +59,9 @@
 								<option value="Chemist">Chemist</option>
 								<option value="GP">GP</option>
 							</select>
+							<div  id="sidebtncontainer">
+							<input id="sidebtn" value="search">
+							</div>
 						</div>
 						
 					</div>
@@ -66,7 +72,7 @@
 
  
 							<ul class="bjqs">
-								<li><a href=""><img src="images/smoke.jpg" title="smoking"></a></li>
+								<li><a href=""><img src="images/smoke.jpg" title="smoking" width="712px"></a></li>
 								<li><img src="images/mentalhealth.jpg" title="mental health"></li>
 								<li><img src="images/shhh.png" title=""></li>
 							</ul>
@@ -79,7 +85,7 @@
 									$('#banner-slide').bjqs({
 										animtype      : 'slide',
 										height        : 320,
-										width         : 500,
+										width         : 712,
 										responsive    : true,
 										randomstart   : true
 									});
@@ -213,6 +219,9 @@
 				<!--for anchors and other links-->
 				<div id="bottom">
 					<div>
+						<br><a href="https://www.google.ie" >Terms and Conditions</br> </a>
+						<br><a href="https://www.google.ie" > Contact us </br></a>
+						<br><a href="https://www.google.ie"> Policy on Cookies</br> </a>
 					</div>
 				</div>
 			</div>

@@ -125,9 +125,9 @@
                 }
 
                 // create and show markers
-                if( settings.showmarkers ){
+               /* if( settings.showmarkers ){
                     conf_markers();
-                }
+                }*/
 
                 // enable slidenumboard navigation
                 if( settings.keyboardnav ){
@@ -479,7 +479,7 @@
                     gotoslide = key + 2;
                 }
 
-                var marker = $('<li><a href="#">'+ slidenum +'</a></li>');
+                var marker = $('<li><a href="#" src="images/bullet3.png">'+ slidenum +'</a></li>');
 
                 // set the first marker to be active
                 if(slidenum === state.currentslide){ marker.addClass('active-marker'); }
