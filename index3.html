@@ -1,0 +1,63 @@
+<!DOCTYPE HTML>
+<html>
+<!--to do list
+set limit on how many divs in main can be displayed at once similar to old custom slider
+fill in side divider
+merge barrys code with mine
+add alt tags to all images on all pages
+-->
+	<head>
+		<title> MEDICAL-HUB</title>
+		<link rel="stylesheet" type="text/css" href="css/style.css"/>
+		<script src=http://code.jquery.com/jquery-latest.min.js></script>
+		<link rel="stylesheet" href="css/bjqs.css">
+		<link href='http://fonts.googleapis.com/css?family=Source+Code+Pro|Open+Sans:300' rel='stylesheet' type='text/css'> 
+	</head>
+	<body>
+		<div id="background">
+			<div id="header">	
+				<img src="images/mainlogo.jpg" >
+				<h1>MEDICAL-HUB</h1>
+				<ul id="topside">
+				<li class="btn" id="btn1">
+							<a class="btnstyle" href="index.html" onmouseover="mopen('m1')" onmouseout="mclosetime()">Home</a>
+								<div id="m1" onmouseover="mcancelclosetime()" onmouseout="mclosetime()">
+									<a href="#">This will bring you to the homepage</a>
+								</div>
+						</li>
+						<li class="btn" id="btn2">
+							<a class="btnstyle" href="https://www.google.ie" onmouseover="mopen('m2')" onmouseout="mclosetime()">Contact us</a>
+								<div id="m2" onmouseover="mcancelclosetime()" onmouseout="mclosetime()">
+									<a href="#">Click for our details</a>
+								</div>
+						</li>
+						<li class="btn" id="btn3">
+							<a class="btnstyle" href="https://www.google.ie" onmouseover="mopen('m3')" onmouseout="mclosetime()">Search </a>
+								<div id="m3" onmouseover="mcancelclosetime()" onmouseout="mclosetime()">
+									<a href="#"> Search medical services</a>
+								</div>
+						</li>
+					</ul>
+			</div>
+			<div id="wrapper">
+			
+						<div class="main" id="contactmain">
+							<div id="centercontact">
+								<h1>About Us</h1>
+								<p>Here at Medical Hub we aim to help people find everything they need to know about any and all medical services in their area. This includes open/closing times, exact location of services and information on exactly what services they specialise in.</p>
+								<h1>Contact Us</h1>
+								<p>If you have any objection with us advertising your medical service or we missed yours please don't hesitate to contact us at 030938273.</p>
+								<p>if you have any other queries please Emails us at info@medicalhub.com or call us at 030943513</p>
+							</div>
+						</div>
+				<!--for anchors and other links-->
+				<div id="bottomcontact">
+					<div>
+					</div>
+				</div>
+			</div>
+		</div>
+	<script src="js/behaviour.js"></script>
+	</body>
+
+</html>

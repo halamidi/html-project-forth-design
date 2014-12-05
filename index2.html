@@ -19,30 +19,30 @@ add alt tags to all images on all pages
 			<div id="header">	
 				<img src="images/mainlogo.jpg" >
 				<h1>MEDICAL-HUB</h1>
-			</div>
-			<div id="wrapper">
-			
-				<div class="side" id="sidepg2" >
-					<ul id="topside">
-						<li class="btn">
+				<ul id="topside">
+				<li class="btn" id="btn1">
 							<a class="btnstyle" href="index.html" onmouseover="mopen('m1')" onmouseout="mclosetime()">Home</a>
 								<div id="m1" onmouseover="mcancelclosetime()" onmouseout="mclosetime()">
 									<a href="#">This will bring you to the homepage</a>
 								</div>
 						</li>
-						<li class="btn">
+						<li class="btn" id="btn2">
 							<a class="btnstyle" href="https://www.google.ie" onmouseover="mopen('m2')" onmouseout="mclosetime()">Contact us</a>
 								<div id="m2" onmouseover="mcancelclosetime()" onmouseout="mclosetime()">
 									<a href="#">Click for our details</a>
 								</div>
 						</li>
-						<li class="btn">
+						<li class="btn" id="btn3">
 							<a class="btnstyle" href="https://www.google.ie" onmouseover="mopen('m3')" onmouseout="mclosetime()">Search </a>
 								<div id="m3" onmouseover="mcancelclosetime()" onmouseout="mclosetime()">
 									<a href="#"> Search medical services</a>
 								</div>
 						</li>
 					</ul>
+			</div>
+			<div id="wrapper">
+			
+				<div class="side" id="sidepg2" >
 					<div id="largeside2">
 						<div id="sidediv">
 							<form id="searchstyle" method="get">
@@ -58,6 +58,9 @@ add alt tags to all images on all pages
 								<option value="Pharmacy">Pharmacy</option>
 								<option value="GP">GP</option>
 							</select>
+							<div  id="sidebtncontainer">
+								<input id="sidebtn" type="button" value="search">
+							</div>
 						</div>
 						
 					</div>
@@ -108,13 +111,6 @@ add alt tags to all images on all pages
 	   <script src="js/libs/jquery.secret-source.min.js"></script>
 
     <script>
-    jQuery(function($) {
-
-        $('.secret-source').secretSource({
-            includeTag: false
-        });
-
-    });
 	$(document).ready(function(){
 		$('#erase').keyup(function(e) {
 			if(e.which == 13) {
