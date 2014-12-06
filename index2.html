@@ -45,8 +45,8 @@ add alt tags to all images on all pages
 				<div class="side" id="sidepg2" >
 					<div id="largeside2">
 						<div id="sidediv">
-							<form id="searchstyle" method="get">
-								<input type="text" id="erase" class="textinput" onsubmit="validateForm();" name="sb" size="16" maxlength="120" value="find services in your area"><input type="button" value="Search" class="searchbutton">
+							<form id="searchstyle" onsubmit="return false;" method="get">
+								<input type="text" id="erase" class="textinput" name="sb" size="16" maxlength="120" value="find services in your area"><input type="button" onclick="alert("works");" value="Search" class="searchbutton">
 							</form>
 							<select class="slop" id="location" style="width:140px">
 								<option value="location">Location</option>
@@ -133,15 +133,19 @@ add alt tags to all images on all pages
 	   <script src="js/libs/jquery.secret-source.min.js"></script>
 
     <script>
-	$(document).ready(function(){
-		$('#erase').keyup(function(e) {
-			if(e.which == 13) {
-			$.fn.display();
-			return false;
-			}
-		});
+	//cant get the below script to work
+	//$(document).ready(function(){
+		//window.localStorage.getItem(toAdd);
+		//if(toAdd === "all"){
+		//alert("works");
+		//window.test();
+		//}
+//	});
+	$("#erase").keypress(function(event){
+    if(event.keyCode == 13){
+		test();
+    }
 	});
-	
     </script>
 	<script src="js/behaviour.js"></script>
 	

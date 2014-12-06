@@ -68,7 +68,7 @@ $(document).ready(function(){
     });
 */
 $(document).ready(function(){
-    $('.searchbutton, #sidebtn').click(function test(){
+    $('.searchbutton, #sidebtn').click(window.test = function test(){
 		//reset display style
 		$("#service2").css("display", "none");
 		$("#service1").css("display", "none");
@@ -79,7 +79,10 @@ $(document).ready(function(){
 		//removes paragraph
 		$( "p" ).remove( ":contains('no results found')" );
 		//declare and initialize variable 
-        var toAdd = $('#erase').val();
+		var toAdd = document.getElementById("erase").value;
+		window.localStorage.toAdd;
+		window.localStorage.setItem('erase', toAdd);
+        //var toAdd = $('#erase').val();
 		toAdd = toAdd.toUpperCase();
 		var cat = $('#category').val();
 		var loc = $('#location').val();

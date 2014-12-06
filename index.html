@@ -28,7 +28,7 @@
 								</div>
 						</li>
 						<li class="btn" id="btn3">
-							<a class="btnstyle" href="https://www.google.ie" onmouseover="mopen('m3')" onmouseout="mclosetime()">Search </a>
+							<a class="btnstyle" href="index2.html" onmouseover="mopen('m3')" onmouseout="mclosetime()">Search </a>
 								<div id="m3" onmouseover="mcancelclosetime()" onmouseout="mclosetime()">
 									<a href="#"> Search medical services</a>
 								</div>
@@ -47,8 +47,8 @@
 					</div>
 					<div id="largeside">
 						<div id="insidediv">
-							<form id="searchstyle" method="get" action="index2.html">
-								<input type="text" id="erase" class="textinput" name="sb" size="16" maxlength="120" value="find services in your area"><input type="submit" value="Search" class="searchbutton" id="click">
+							<form id="searchstyle" method="get" onsubmit="return false;">
+								<input type="text" id="erase" class="textinput" name="sb" size="16" maxlength="120" value="find services in your area"><input type="button" value="Search" class="searchbutton" id="click">
 							</form>
 							<select class="slop" style="width:140px">
 								<option value="location">Location</option>
@@ -257,6 +257,12 @@
         });
 
     });
+	$("#erase").keypress(function(event){
+    if(event.keyCode == 13){
+		test();
+		window.open("index2.html");
+    }
+	});
     </script>
 	<script src="js/behaviour.js"></script>
 	
