@@ -8,7 +8,6 @@
 		<link href='http://fonts.googleapis.com/css?family=Source+Code+Pro|Open+Sans:300' rel='stylesheet' type='text/css'> 
 		<!--bjqs-1.3 is not our code so i have left it out of our main JavaScript the name of the creator of the js is contained within the js-->
 		<script src="js/bjqs-1.3.min.js"></script>
-		<script src="js/jquery.cookie.js"></script>
 	</head>
 	<body>
 		<div id="background">
@@ -48,21 +47,21 @@
 					</div>
 					<div id="largeside">
 						<div id="insidediv">
-							<form id="searchstyle" method="get" onsubmit="return false;">
-								<input type="text" id="erase" class="textinput" name="sb" size="16" maxlength="120" value="find services in your area"><input type="button" value="Search" class="searchbutton" id="click">
+							<form id="searchstyle" name="searchstyle" method="get" onsubmit="return false;">
+								<input type="text" name="textinput" id="erase" class="textinput" name="sb" size="20" maxlength="120" value="find services in your area"><!--<input type="button" value="Search" class="searchbutton" id="click">-->
 							</form>
-							<select class="slop" style="width:140px">
-								<option value="location">Location</option>
+							<select class="slop" name="location" id="location" style="width:140px">
+								<option value="Location">Location</option>
 								<option value="Dublin">Dublin</option>
 								<option value="Wicklow">Wicklow</option>
 							</select>
-							<select class="slop" style="width:140px">
-								<option value="Type">Services</option>
-								<option value="Chemist">Chemist</option>
+							<select class="slop" name="category" id="category" style="width:140px">
+								<option value="Services">Services</option>
+								<option value="Pharmacy">Pharmacy</option>
 								<option value="GP">GP</option>
 							</select>
 							<div  id="sidebtncontainer">
-							<input id="sidebtn" type="button" value="search">
+							<input id="sidebtn" type="button" onclick="stCookies()" value="search">
 							</div>
 						</div>
 						
@@ -74,7 +73,7 @@
 
  
 							<ul class="bjqs">
-								<li><a href=""><img src="images/smoke.jpg" title="smoking" width="712px"></a></li>
+								<li><a href=""><img src="images/smoke.jpg" alt="Second Hand smoke leads to chronic allergies in children" title="smoking" width="712px"></a></li>
 								<li><img src="images/mentalhealth.jpg" title="mental health"></li>
 								<li><img src="images/shhh.png" title=""></li>
 							</ul>
@@ -260,10 +259,17 @@
     });
 	$("#erase").keypress(function(event){
     if(event.keyCode == 13){
-		test();
-		window.open("index2.html");
-    }
+		stCookies();
+	}
 	});
+	function stCookies(){
+	//clear previous cookies
+		eraseCookie('Userinpt1');
+		eraseCookie('Userinpt2');
+		eraseCookie('Userinpt3');
+		test();
+		window.open("index2.html",'_self');
+	}
     </script>
 	<script src="js/behaviour.js"></script>
 	

@@ -13,7 +13,6 @@ add alt tags to all images on all pages
 		<link rel="stylesheet" href="css/bjqs.css">
 		<link href='http://fonts.googleapis.com/css?family=Source+Code+Pro|Open+Sans:300' rel='stylesheet' type='text/css'> 
 		<script src="js/bjqs-1.3.min.js"></script>
-		<script src="js/jquery.cookie.js"></script>
 	</head>
 	<body>
 		<div id="background">
@@ -34,7 +33,7 @@ add alt tags to all images on all pages
 								</div>
 						</li>
 						<li class="btn" id="btn3">
-							<a class="btnstyle" href="https://www.google.ie" onmouseover="mopen('m3')" onmouseout="mclosetime()">Search </a>
+							<a class="btnstyle" href="index2.html" onmouseover="mopen('m3')" onmouseout="mclosetime()">Search </a>
 								<div id="m3" onmouseover="mcancelclosetime()" onmouseout="mclosetime()">
 									<a href="#"> Search medical services</a>
 								</div>
@@ -46,21 +45,21 @@ add alt tags to all images on all pages
 				<div class="side" id="sidepg2" >
 					<div id="largeside2">
 						<div id="sidediv">
-							<form id="searchstyle" onsubmit="return false;" method="get">
-								<input type="text" id="erase" class="textinput" name="sb" size="16" maxlength="120" value="find services in your area"><input type="button" onclick="alert("works");" value="Search" class="searchbutton">
+							<form name="searchstyle" id="searchstyle" onsubmit="return false;" method="get">
+								<input type="text" name="textinput" id="erase" class="textinput" name="sb" size="20" maxlength="120" value="find services in your area"><!--<input type="button" onclick="test()" value="Search" class="searchbutton">-->
 							</form>
-							<select class="slop" id="location" style="width:140px">
-								<option value="location">Location</option>
+							<select class="slop" name="location" id="location" style="width:140px">
+								<option value="Location">Location</option>
 								<option value="Dublin">Dublin</option>
 								<option value="Wicklow">Wicklow</option>
 							</select>
-							<select class="slop" id="category" style="width:140px">
-								<option value="Type">Services</option>
+							<select class="slop" name="category" id="category" style="width:140px">
+								<option value="Services">Services</option>
 								<option value="Pharmacy">Pharmacy</option>
 								<option value="GP">GP</option>
 							</select>
 							<div  id="sidebtncontainer">
-								<input id="sidebtn" type="button" value="search">
+								<input id="sidebtn" type="button" onclick="stCookies()" value="search">
 							</div>
 						</div>
 						
@@ -142,11 +141,19 @@ add alt tags to all images on all pages
 		//window.test();
 		//}
 //	});
+	
 	$("#erase").keypress(function(event){
     if(event.keyCode == 13){
-		test();
-    }
+		stCookies();
+	}
 	});
+	function stCookies(){
+	//clear previous cookies
+		eraseCookie('Userinpt1');
+		eraseCookie('Userinpt2');
+		eraseCookie('Userinpt3');
+		test();
+	}
     </script>
 	<script src="js/behaviour.js"></script>
 	
