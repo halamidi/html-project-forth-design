@@ -27,13 +27,14 @@ margin:0 auto;
 	left:10px;
 	height: 197px;
 	width:100%;
+	padding:2px;
 }
 	#header img
 	{
 		height:80px; 
 		width:22%;
 		position:relative;
-	
+	padding:2px;
 		left: 40px;
 }
 	#header h1
@@ -99,6 +100,7 @@ color: white;	}
 	#btn1
 	{
 	position: relative;
+	padding:2px;
 	left: 140px;
 	width: 182px;
 }

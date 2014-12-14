@@ -95,7 +95,7 @@ isItThere = document.cookie.indexOf(name+"=");
 return isItThere;
 }
 
-$(document).ready(window.test = function test(){
+$(document).ready(window.searchft = function searchft(){
 		//reset display style
 		$("#service2").css("display", "none");
 		$("#service1").css("display", "none");
@@ -110,19 +110,19 @@ $(document).ready(window.test = function test(){
 		var cat;
 		var loc;
 		var check = document.getElementById("erase").value;
-		var cat2 = $('#category').val();
-		var loc2 = $('#location').val();
+		var check2 = $('#category').val();
+		var check3 = $('#location').val();
 		//separate if statements to check what user inputs has new values in them
 		if(check != "find services in your area" && check != ""){
 			//if check is equal to the above parameters then the name,value and expire value is sent to the functions 
 			//the expiry date is set to 0 so once you exit the browser the cookie is deleted 
 			createCookie('Userinpt1',check,0);
 		}
-		if(cat2 != "Services"){
-			createCookie('Userinpt2',cat2,0);
+		if(check2 != "Services"){
+			createCookie('Userinpt2',check2,0);
 		}
-		if(loc2 != "Location"){
-			createCookie('Userinpt3',loc2,0);
+		if(check3 != "Location"){
+			createCookie('Userinpt3',check3,0);
 		}
 		//call function to check if cookie exists
 		var ckcookie = checkCookie('Userinpt1');

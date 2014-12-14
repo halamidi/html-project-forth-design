@@ -22,7 +22,7 @@
 								</div>
 						</li>
 						<li class="btn" id="btn2">
-							<a class="btnstyle" href="https://www.google.ie" onmouseover="mopen('m2')" onmouseout="mclosetime()">Contact us</a>
+							<a class="btnstyle" href="index3.html" onmouseover="mopen('m2')" onmouseout="mclosetime()">Contact us</a>
 								<div id="m2" onmouseover="mcancelclosetime()" onmouseout="mclosetime()">
 									<a href="#">Click for our details</a>
 								</div>
@@ -251,12 +251,13 @@
 
     <script>
     jQuery(function($) {
-
+		
         $('.secret-source').secretSource({
             includeTag: false
         });
 
     });
+	//when enter is pressed the function is activated and the function calls setCookies
 	$("#erase").keypress(function(event){
     if(event.keyCode == 13){
 		stCookies();
@@ -267,12 +268,14 @@
 		eraseCookie('Userinpt1');
 		eraseCookie('Userinpt2');
 		eraseCookie('Userinpt3');
-		test();
+		//calls functions
+		searchft();
+		//opens newpage in same tab
 		window.open("index2.html",'_self');
 	}
     </script>
 	<script src="js/behaviour.js"></script>
-	
+	<script src="js/homepagebehaviour.js"></script>
 	</body>
 
 </html>

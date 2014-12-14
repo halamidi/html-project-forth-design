@@ -1,16 +1,28 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html>
-	<head>
-		<title> MEDICAL-HUB</title>
-		<link rel="stylesheet" type="text/css" href="css/style.css"/>
-		<script src=http://code.jquery.com/jquery-latest.min.js></script>
-		<link rel="stylesheet" href="css/bjqs.css">
-		<link href='http://fonts.googleapis.com/css?family=Source+Code+Pro|Open+Sans:300' rel='stylesheet' type='text/css'> 
-	</head>
-	<body>
-		<div id="background">
-			<div id="header">	
-				<img src="images/mainlogo.jpg" >
+  <head>
+<link rel="stylesheet" type="text/css" href="css/style.css"/>
+
+
+    <script src="https://maps.googleapis.com/maps/api/js"></script>
+	<style>
+							#map-canvas{
+							height:80%;
+							width:96%;
+							padding:10px;
+							border:2px solid black;
+							
+							}
+							
+							</style>
+    
+  </head>
+  <body>
+  <div id="background" >
+  <div id="header">
+  
+  
+  <img src="images/mainlogo.jpg" >
 				<h1>MEDICAL-HUB</h1>
 				<ul id="topside">
 				<li class="btn" id="btn1">
@@ -33,16 +45,23 @@
 						</li>
 					</ul>
 			</div>
+			
 			<div id="wrapper">
 			
-						<div class="main" id="contactmain">
-							<div id="centercontact">
-								<h1>About Us</h1>
-								<p>Here at Medical Hub we aim to help people find everything they need to know about any and all medical services in their area. This includes open/closing times, exact location of services and information on exactly what services they specialise in.</p>
-								<h1>Contact Us</h1>
-								<p>If you have any objection with us advertising your medical service or we missed yours please don't hesitate to contact us at 030938273.</p>
-								<p>if you have any other queries please Emails us at info@medicalhub.com or call us at 030943513</p>
+						<div class="main" id="pagefillermain">
+							<div id="centerpagefiller">
+							
+							<div id="sidemain"> </div>
+							
+							<div id="maptitle"> <h1>Dr. Dennis GP</h1> </div>
+								Open: 
+								<br>Mon-Friday 07:00-19:00</br>
+								Saturday 09:00-19:00
+								
+								<div id="map-canvas"></div>
+
 							</div>
+							
 						</div>
 				<!--for anchors and other links-->
 				<div id="bottomcontact">
@@ -73,7 +92,37 @@
 				</div>
 			</div>
 		</div>
-	<script src="js/behaviour.js"></script>
-	</body>
+		
+		
 
+      								 <script>
+function initialize() {
+  var myLatlng = new google.maps.LatLng(53.34904280081605, -6.242991683367336);
+  var mapOptions = {
+    zoom: 10,
+    center: myLatlng
+  }
+  var map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
+
+  var marker = new google.maps.Marker({
+      position: myLatlng,
+      map: map,
+      
+  });
+}
+
+google.maps.event.addDomListener(window, 'load', initialize);
+
+    </script>
+	
+	<script src="js/behaviour.js"></script>
+			
+			
+			</div> 
+			
+		
+  
+  
+    
+  </body>
 </html>
